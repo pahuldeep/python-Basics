@@ -3,7 +3,7 @@ from mysql.connector import Error
 
 connection=mysql.connector.connect(host='localhost',
     user='root',
-    password='pahul1999',
+    password='********',
     database='pahuldb')
 
 info=connection.get_server_info()
@@ -62,9 +62,9 @@ def deletedata(id):
     connection.commit()
     print("data is deleted sucessfully")
     fetchdata()
+
 #id=input("id :")
 #deletedata(id)
-
 #To comment on query --query--   LIMIT,WHERE,DISTICT,AND,OR,NOT,IN,BETWEEN,ORDER BY,GROUP BY,HAVING                
 #SElECT*From tablename /WHERE city="CHD'LIMIT'"  
 #SELECT distict(city) /From tablename 
@@ -76,8 +76,3 @@ def deletedata(id):
 #SELECT count(id) From tablename
 #SELECT sum(salary) From tablename/GROUPBY city(having condition)
 #SELECT from tablename orderby salary desc limit 2
-
-
-
-
-
