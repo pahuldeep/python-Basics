@@ -1,13 +1,8 @@
 import mysql.connector
 from mysql.connector import Error
-
-connection=mysql.connector.connect(host='localhost',
-    user='root',
-    password='********',
-    database='pahuldb')
+connection=mysql.connector.connect(host='localhost',user='root',password='********',database='pahuldb')
 
 info=connection.get_server_info()
-
 print(connection)
 print(info)
 
