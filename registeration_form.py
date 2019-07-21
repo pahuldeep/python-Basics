@@ -1,7 +1,7 @@
 import mysql.connector
 con=mysql.connector.connect(host="localhost",
                             user="root",
-                            password="pahul1999",
+                            password="*********",
                             database="pahuldb")
 sql=con.cursor()
 import tkinter as t
